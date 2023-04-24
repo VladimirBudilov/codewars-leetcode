@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj",
+        "projectName": "CodeWars",
+        "projectPath": "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj",
+        "packagesPath": "C:\\Users\\киса\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "A:\\unity\\vcothers\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\киса\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
