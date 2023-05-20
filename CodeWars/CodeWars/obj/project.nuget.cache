@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jFmpx9SE9LJOUuJ9WlPscyPLuENuPCxrUyhJJZ4KNrF9ZMW6Yy37E+RWxoW8WGvJnMm45l0za3Qn2SyCI/BUvw==",
+  "dgSpecHash": "i4n8h1Q7FD4p8jNUOj1bYRIfBuuqu1lsYWEbQzMHGUfiCsWkoZawdR5M2WcX1QVR1m35uTrlno9dNR4r3+byWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\киса\\RiderProjects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\C#Projects\\codewars-leetcode\\CodeWars\\CodeWars\\CodeWars.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\киса\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\киса\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\киса\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\киса\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
