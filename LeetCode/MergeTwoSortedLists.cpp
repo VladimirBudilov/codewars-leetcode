@@ -36,17 +36,13 @@ public:
         ListNode *sortedList = nullptr;
 
         while (list1 || list2) {
-            if(!list1)
-            {
+            if (!list1) {
                 addNode(&sortedList, list2);
                 list2 = list2->next;
-            }
-            else if(!list2)
-            {
+            } else if (!list2) {
                 addNode(&sortedList, list1);
                 list1 = list1->next;
-            }
-            else if (list1->val <= list2->val) {
+            } else if (list1->val <= list2->val) {
                 addNode(&sortedList, list1);
                 list1 = list1->next;
             } else if (list1->val >= list2->val) {
@@ -74,7 +70,7 @@ int main() {
     l2_1.next = &l2_2;
     l2_2.next = &l2_3;
 
-    ListNode* sorted = Solution::mergeTwoLists(&l1_1, &l2_1);
+    ListNode *sorted = Solution::mergeTwoLists(&l1_1, &l2_1);
 
     while (sorted != nullptr) {
         std::cout << sorted->val << std::endl;

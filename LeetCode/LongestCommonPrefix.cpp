@@ -16,16 +16,16 @@ public:
 
         std::sort(strs.begin(), strs.end(),
                   [](std::string a, std::string b)
-                  -> bool {return a > b;}
-                  );
+                          -> bool { return a > b; }
+        );
         while (stillPrefix && i < strs[0].size()) {
             for (int j = 1; j < strs.size(); ++j) {
-                if (!(strs[0].substr(0, i+1) == strs[j].substr(0, i+1))) {
+                if (!(strs[0].substr(0, i + 1) == strs[j].substr(0, i + 1))) {
                     stillPrefix = false;
                     break;
                 }
             }
-            if(!stillPrefix)
+            if (!stillPrefix)
                 break;
             prefix += strs[0][i];
             ++i;
@@ -40,7 +40,7 @@ int main() {
         std::cout << Solution::longestCommonPrefix(str) << std::endl;
     }
     {
-        std::vector<std::string> str = {"flower","flower","flower","flower"};
+        std::vector<std::string> str = {"flower", "flower", "flower", "flower"};
         std::cout << Solution::longestCommonPrefix(str) << std::endl;
     }
     {

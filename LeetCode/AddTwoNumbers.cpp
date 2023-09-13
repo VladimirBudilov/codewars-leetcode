@@ -3,35 +3,37 @@
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.*/
 
 #include <iostream>
-#include <cmath>
 
 struct ListNode {
     int val;
     ListNode *next;
+
     ListNode() : val(0), next(nullptr) {}
+
     ListNode(int x) : val(x), next(nullptr) {}
+
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+
 // 1 2 3
 class Solution {
 public:
-    static ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    static ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
         long int n1 = 0;
         long int n2 = 0;
 
-        if(l1 == nullptr)
+        if (l1 == nullptr)
             return l2;
-        if(l2 == nullptr)
+        if (l2 == nullptr)
             return l1;
         ListNode *res = new ListNode();
         ListNode *tmpNode = res;
         int sum = 0;
         int temp = 0;
 
-        while(l1 && l2)
-        {
+        while (l1 && l2) {
             sum = l1->val + l2->val + temp;
-            if(sum > 9)
+            if (sum > 9)
                 temp = 1;
             else
                 temp = 0;
@@ -39,34 +41,32 @@ public:
             l1 = l1->next;
             l2 = l2->next;
             sum = 0;
-            if(!l1 || !l2)
+            if (!l1 || !l2)
                 break;
             tmpNode->next = new ListNode();
             tmpNode = tmpNode->next;
         }
-        while(l1)
-        {
+        while (l1) {
             tmpNode->next = new ListNode();
             tmpNode = tmpNode->next;
             tmpNode->val = (l1->val + temp) % 10;
-            if(l1->val + temp > 9)
+            if (l1->val + temp > 9)
                 temp = 1;
             else
                 temp = 0;
             l1 = l1->next;
         }
-        while(l2)
-        {
+        while (l2) {
             tmpNode->next = new ListNode();
             tmpNode = tmpNode->next;
             tmpNode->val = (l2->val + temp) % 10;
-            if(l2->val + temp > 9)
+            if (l2->val + temp > 9)
                 temp = 1;
             else
                 temp = 0;
             l2 = l2->next;
         }
-        if(temp) {
+        if (temp) {
             tmpNode->next = new ListNode();
             tmpNode = tmpNode->next;
             tmpNode->val = 1;
@@ -91,7 +91,7 @@ int main() {
     //l2_1.next = &l2_2;
     //l2_2.next = &l2_3;
 
-    ListNode* sorted = Solution::addTwoNumbers(&l1_1, &l2_1);
+    ListNode *sorted = Solution::addTwoNumbers(&l1_1, &l2_1);
 
     while (sorted != nullptr) {
         std::cout << sorted->val << std::endl;
